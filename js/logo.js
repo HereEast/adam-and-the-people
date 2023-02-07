@@ -5,10 +5,12 @@ const header = document.querySelector("h1");
 const headerText = header.innerHTML;
 
 
-headerLink.addEventListener("click", (e) => e.preventDefault());
-header.addEventListener("mouseenter", glitch);
-header.addEventListener("click", glitch);
+headerLink.addEventListener("click", (e) => {
+    location.reload();
+    e.preventDefault();
+});
 
+header.addEventListener("mouseenter", glitch);
 
 function glitch() {
     createSpans(header, headerText);
