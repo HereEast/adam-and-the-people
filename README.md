@@ -29,4 +29,5 @@
 - [ ] Loader overlay animation while images are loaded (it's stuck)
 - [ ] How to hide loader not on timer, but when all images are loaded?
 - [ ] How to load 155 images that have to be of high resolution since they can be scaled full screen width?
+- [ ] Input range thumb: larger clickable / touchable area
 - [ ] Code structure
