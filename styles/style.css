@@ -107,6 +107,7 @@ h1 {
 .image__container {
     overflow: hidden;
     visibility: hidden;
+    background-color: #D4D4D4;
 
     transition: width 0.2s linear, opacity 0.2s ease-in-out;
 }
@@ -142,6 +143,9 @@ h1 {
 
 .footer {
     width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
     display: flex;
     justify-content: space-between;
     padding: 15px 0;
@@ -172,7 +176,7 @@ h1 {
 
     display: none;
     opacity: 0;
-    transition: opacity 0.1s ease-in;
+    transition: opacity 0.2s ease-in;
 }
 
 .popup__header {
