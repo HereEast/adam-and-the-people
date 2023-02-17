@@ -10,7 +10,7 @@ let isLoaderHidden = false;
 //////////////
 
 createSpans(loadElement, loaderText);
-glitchLetters(loadElement, loaderText, 1.5);
+glitchLetters(loadElement, loaderText, 2);
 
 // let interval = setInterval(() => {
 //     if(isLoaderFinished()) {
