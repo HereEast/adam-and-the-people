@@ -10,7 +10,7 @@ let isLoaderHidden = false;
 //////////////
 
 createSpans(loadElement, loaderText);
-glitchLetters(loadElement, loaderText, 4);
+glitchLetters(loadElement, loaderText, 3);
 
 // Hide loader
 function hideLoader() {
