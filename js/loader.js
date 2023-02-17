@@ -10,22 +10,7 @@ let isLoaderHidden = false;
 //////////////
 
 createSpans(loadElement, loaderText);
-glitchLetters(loadElement, loaderText, 2);
-
-// let interval = setInterval(() => {
-//     if(isLoaderFinished()) {
-//         hideLoader();
-//         clearInterval(interval);
-//     }
-// }, 500)
-
-// Finished loader
-function isLoaderFinished() {
-    const spans = Array.from(loadElement.querySelectorAll("span"));
-    const spansText = spans.map(span => span.textContent).join("");
-
-    return spansText === loaderText;
-}
+glitchLetters(loadElement, loaderText, 4);
 
 // Hide loader
 function hideLoader() {
