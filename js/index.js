@@ -13,14 +13,14 @@ const imageSection = document.querySelector(".image__section");
 const range = document.querySelector(".range");
 
 let currentPageWidth = main.clientWidth;
-let currentValue = window.innerWidth <= 800 ? 0 : 8;
+let currentValue = window.innerWidth <= 800 ? 0 : 7;
 
 ////////////
 
 updateProgressBar(currentValue);
 
 if (window.innerWidth <= 800) createImages(400, 800);
-else createImages(800, 1920);
+else createImages(400, 1920);
 
 ////////////
 
@@ -99,10 +99,11 @@ function createImages(size, maxSize) {
             addImageOrientation(image);
 
             if (count === images.length) {
-                gsap.delayedCall(3, hideLoader);
+                gsap.delayedCall(4, hideLoader);
             }
 
             loadBigImages(image, index, maxSize);
+            // console.log(image);
         };
     }
 }
